@@ -7,4 +7,5 @@ class User < ActiveRecord::Base
 	validates :rollno, presence: true, length: { minimum: 8, maximum: 8}, format: { with: VALID_ROLL_REGEX }, 
 	          uniqueness: {  case_sensitive: false }
 	has_secure_password
+	has_many :complaints
 end

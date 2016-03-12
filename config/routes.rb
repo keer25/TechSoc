@@ -6,9 +6,10 @@ Rails.application.routes.draw do
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
   get 'hostellers' => 'static_pages#hostellers'
-  destroy 'logout' => 'sessions#destroy'
+  delete 'logout' => 'sessions#destroy'
   resources :users
   resources :sessions
+  resources :complaints
   get 'performance' => 'static_pages#performance' 
   get 'gallery' => 'static_pages#gallery'
   get 'executive' => 'static_pages#executive'
