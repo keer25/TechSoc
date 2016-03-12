@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get 'contact' => 'static_pages#contact'
   get 'signup' => 'users#new'
+  get 'login' => 'sessions#new'
   get 'hostellers' => 'static_pages#hostellers'
+  resources :users
+  resources :sessions
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
