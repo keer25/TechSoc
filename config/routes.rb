@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
   get 'hostellers' => 'static_pages#hostellers'
+  get 'logout' => 'sessions#destroy'
   resources :users
   resources :sessions
   get 'performance' => 'static_pages#performance' 
