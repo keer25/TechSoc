@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-  	user = User.find_by(email: params[:session][:email].downcase)
+  	user = User.find_by(rollno: params[:session][:rollno].downcase)
     if user && user.authenticate(params[:session][:password])
     	logger.info("Valid User Signed in")
     	log_in(user)
