@@ -1,0 +1,13 @@
+<% provide(:title, 'Add Complaint') %>
+<h1>Complaint</h1>
+<div class="row">
+      <div class = "col-md-6 col-md-offset-3">
+      <% @user = User.new %>
+            <%= form_for(@complaint) do |f| %>
+                  <%= f.label :content %>*
+                  <%= f.text_field :content %>
+                  <br><br>
+                  <%= f.submit "Create Complaint", class: "btn btn-primary" %>
+            <% end %>
+      </div>
+</div>
