@@ -3,4 +3,6 @@ class StaticPagesController < ApplicationController
 	end 
 	def performance
 	end
+	def gallery
+	end
 end

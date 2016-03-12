@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions
   get 'performance' => 'static_pages#performance' 
+  get 'gallery' => 'static_pages#gallery'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
