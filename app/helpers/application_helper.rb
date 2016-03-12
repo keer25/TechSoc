@@ -1,6 +1,6 @@
 module ApplicationHelper
 	def page_title(title="")
-		base_title = "CFI Portal"
+		base_title = "Sarayu"
 		if title.empty?
 			base_title
 		else

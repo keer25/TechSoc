@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'hostellers' => 'static_pages#hostellers'
   resources :users
   resources :sessions
+  get 'performance' => 'static_pages#performance' 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
