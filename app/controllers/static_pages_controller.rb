@@ -5,4 +5,6 @@ class StaticPagesController < ApplicationController
 	end
 	def gallery
 	end
+	def executive
+	end
 end
