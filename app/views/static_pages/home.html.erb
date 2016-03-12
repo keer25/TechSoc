@@ -1,13 +1,2 @@
-<h1>CFI Portal</h1>
+<h1>Sarayu Hostel</h1>
 <br><br>
-<% if logged_in?  %>
-	<%= link_to "Add a Bill", new_bill_path,class: "btn btn-lg btn-primary" %>
-	<br><br>
-	<% if current_user.designation == "FC" %>
-		<%= link_to "See Pending Tasks", show_task_path, class: "btn btn-lg btn-primary" %>
-	<% elsif current_user.designation == "CH" %>	
-		<%= link_to "Request TA", new_task_path, class: "btn btn-lg btn-primary" %>
-	<% end %>
-<% else %>	
-	<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-<% end %>	
